@@ -1,4 +1,4 @@
-// 3진법 뒤집기
+package Programmers.Complete;// 3진법 뒤집기
 
 import java.sql.SQLOutput;
 import java.util.*;

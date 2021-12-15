@@ -1,3 +1,5 @@
+package Programmers.Complete;
+
 // 콜라츠 추측
 public class Collatz {
   public int solution(long num) {

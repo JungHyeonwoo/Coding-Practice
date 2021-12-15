@@ -1,3 +1,5 @@
+package Programmers.Complete;
+
 // 내적
 public class dot_product {
   public int solution(int[] a, int[] b) {
