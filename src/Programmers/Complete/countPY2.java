@@ -1,4 +1,4 @@
-package Programmers.fail;
+package Programmers.Complete;
 
 public class countPY2 {
   boolean solution(String s) {
