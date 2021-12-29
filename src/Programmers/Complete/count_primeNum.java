@@ -1,6 +1,6 @@
 package Programmers.Complete;
 
-public class make_primeNum {
+public class count_primeNum {
   public static void main(String[] ar){
     int n = 100000;
     int answer = 0;
