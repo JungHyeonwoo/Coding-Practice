@@ -2,9 +2,10 @@ package Programmers.fail;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
-public class 주차요금계산 {
+public class ParkingFee {
 
   public static void main(String[] ar) {
     int[] fees = {180, 5000, 10, 600};
@@ -12,7 +13,7 @@ public class 주차요금계산 {
         "07:59 0148 IN", "18:59 0000 IN", "19:09 0148 OUT", "22:59 5961 IN", "23:00 5961 OUT"};
     int[] hour = new int[records.length];
     int[] minute = new int[records.length];
-    List<String> carList = new ArrayList<>();
+    List<String> carList = new LinkedList<>();
     for(int i=0; i<records.length;i++) {
       carList.add(records[i].split(" ")[1]);
     }

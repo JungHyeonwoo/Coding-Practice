@@ -1,6 +1,6 @@
 package Programmers.fail;
 
-public class 영어끝말잇기 {
+public class eng_end_talk {
   public static void main(String[] ar){
     int n = 3;
     String[] words = {"tank","kick","know","wheel","land","dream","mother","robot","tank"};

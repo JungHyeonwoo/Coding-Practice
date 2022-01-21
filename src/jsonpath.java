@@ -1,26 +1,17 @@
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class jsonpath {
 
   public static void main(String[] ar) throws IOException {
-    Scanner sc = new Scanner(System.in);
-    int x = sc.nextInt();
-    int y = sc.nextInt();
-    int w = sc.nextInt();
-    int h = sc.nextInt();
-    sc.close();
-    int xm0, ym0, wmx, hmy;
-    xm0 = minus(x, 0);
-    ym0 = minus(y, 0);
-    wmx = minus(w, x);
-    hmy = minus(h, y);
-    int minx = Math.min(xm0, wmx);
-    int miny = Math.min(ym0, hmy);
-    int result = Math.min(minx, miny);
-    System.out.println(result);
-
-
+    List<Integer> asdf = new ArrayList<>();
+    int[] a = {3,2,4,5,1};
+    for(int i=0; i<a.length;i++){
+      asdf.add(a[i]);
+    }
+    Collections.sort(asdf);
   }
 
 
