@@ -1,4 +1,4 @@
-package Programmers.fail;
+package Programmers.Complete;
 
 import java.util.*;
 // 같은 숫자는 싫어
