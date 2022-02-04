@@ -1,4 +1,4 @@
-package Programmers.Complete;
+package baekjoon;
 
 import java.util.Scanner;
 
