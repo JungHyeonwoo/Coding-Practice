@@ -11,7 +11,7 @@ public class palindrome {
       String a = br.readLine();
       StringBuilder sb = new StringBuilder();
       sb.append(a);
-      StringBuilder rsb = new StringBuilder();;
+      StringBuilder rsb = new StringBuilder();
       String d = rsb.append(a).reverse().toString();
       if(a.equals(String.valueOf(0))) {
         break;
