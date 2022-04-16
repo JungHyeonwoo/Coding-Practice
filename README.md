@@ -2,5 +2,5 @@
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=sktom)](https://solved.ac/sktom)
 
-Last update : 2022-04-10
+Last update : 2022-04-16
 
