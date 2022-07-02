@@ -1,50 +1,44 @@
 package baekjoon;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-
+import java.io.*;
+import java.util.*;
+// baekjoon 2108 - silver3 통계학
+// https://www.acmicpc.net/problem/2108
 public class statistics {
-
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        int N = Integer.parseInt(br.readLine());
-        int[] arr = new int[N];
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] nums = new int[n];
         double sum = 0;
-
-        for(int i = 0; i < N; i++) {
-            arr[i] = Integer.parseInt(br.readLine());
-            sum += arr[i];
+        for(int i = 0; i<n; i++) {
+            nums[i] = sc.nextInt();
+            sum += nums[i];
         }
-
-        Arrays.sort(arr);
-
+        Arrays.sort(nums);
         int count = 0;
         int max = -1;
-
-        int mod = arr[0];
+        int mod = nums[0];
         boolean check = false;
-        for(int i = 0; i < N - 1; i++) {
-            if(arr[i] == arr[i + 1]) {
+        for(int i = 0 ; i < n-1; i++) {
+            if(nums[i] == nums[i+1]) {
                 count++;
-            }else {
+            } else {
                 count = 0;
             }
-
             if(max < count) {
                 max = count;
-                mod = arr[i];
+                mod = nums[i];
                 check = true;
-            }else if(max == count && check == true) {
-                mod = arr[i];
+            } else if(max == count && check ==true) {
+                mod = nums[i];
                 check = false;
             }
         }
-        System.out.println(Math.round(sum / N));
-        System.out.println(arr[(N - 1) / 2]);
-        System.out.println(mod);
-        System.out.println(arr[N - 1] - arr[0]);
-    }
 
+        System.out.println(Math.round(sum/n)); // 산술평균
+        System.out.println(nums[(n-1)/2]); // 중앙값
+        System.out.println(mod); // 최빈값
+        System.out.println(nums[n-1] - nums[0]); // 최댓값 - 최솟값
+
+    }
 }
